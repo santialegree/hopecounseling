@@ -703,9 +703,14 @@ contacto */
 
 
   @media screen and (max-width: 768px) {
-        .icon-img /* .hopeco, */ /* .wppbtn */{
-          height: 50px;
-          width: 50px;
-        }
-        
+    .icon-img  {
+      height: 60px;
+      width: 60px;
+    }
+    
+    .contact-icons {
+      display: table-row;
+      justify-content: center;
+      align-items: center;
+    }
   }
