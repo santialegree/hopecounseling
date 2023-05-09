@@ -158,6 +158,23 @@ Contenedor about */
     }
   }
 
+@media only screen and (max-width: 480px) {
+  .about-image {
+    width: 180px;
+    height: 180px;
+  }
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-description {
+    margin-top: 20px;
+    max-width: none;
+    
+  }
+}
+
   /* contenedor del contenido 4 contenidos */
   .circles-section {
     display: flex;
@@ -205,6 +222,21 @@ Contenedor about */
       margin: 20px;
       flex-basis: calc(50% - 40px);
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .circles-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .circle {
+      margin: 20px;
+      flex-basis: calc(50% - 40px);
+    }
+
+
   }
   /* 
   que es el counseling */
@@ -292,7 +324,36 @@ Contenedor about */
       
     }
   }
+  @media only screen and (max-width: 480px) {
+    .counseling-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
   
+    .counseling-text {
+      display: none;
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      padding: 20px;
+      border-radius: 0;
+      font-size: 14px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-align: justify;
+    }
+  
+    .counseling-section:hover .counseling-text {
+      display: block;
+    }
+  
+    .counseling-section:hover .counseling-img {
+      opacity: 0.5;
+      transition: all 0.4s ease-in-out;
+      transform: rotateY(180deg);
+      
+    }
+  }
   
 
   /* seccion que hace el counselor */
@@ -386,6 +447,45 @@ Contenedor about */
       /* transition: all 0.4s ease-in-out; */
       transform: rotateY(180deg);
     }
+  }
+
+  @media only screen and (max-width: 480px){
+    .counseling-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+/*   .counseling-img {
+      margin: 20px;
+      
+      
+    
+  } */
+
+  .counseling-text2 {
+    display: none;
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+    text-align: justify;
+  }
+
+  .counseling-section:hover .counseling-text2 {
+    display: block;
+  }
+
+  .counseling-section:hover .counseling-img {
+    opacity: 0.5;
+    /* transition: all 0.4s ease-in-out; */
+    transform: rotateY(180deg);
+  }
+
   }
 
 
@@ -490,6 +590,13 @@ contacto */
   }
   
   @media screen and (max-width: 768px) {
+    footer {
+      padding: 10px 0;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+
     footer {
       padding: 10px 0;
     }
