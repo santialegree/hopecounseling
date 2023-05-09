@@ -219,8 +219,11 @@ Contenedor about */
     }
     
     .circle {
-      margin: 20px;
-      flex-basis: calc(50% - 40px);
+      
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      
     }
   }
 
@@ -232,8 +235,9 @@ Contenedor about */
     }
     
     .circle {
-      margin: 20px;
-      flex-basis: calc(50% - 40px);
+      width: 100px;
+      height: 100px;
+      margin: 5px;
     }
 
 
@@ -558,7 +562,7 @@ contacto */
   .icon-text p:first-of-type {
     margin-bottom: 10px;
   }
-  
+
 /* 
   footer */
 
@@ -697,3 +701,11 @@ contacto */
     transform: translateY(1px);
   }
 
+
+  @media screen and (max-width: 768px) {
+        .icon-img /* .hopeco, */ /* .wppbtn */{
+          height: 50px;
+          width: 50px;
+        }
+        
+  }
