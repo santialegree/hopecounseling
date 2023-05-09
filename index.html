@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="directiva-de-csp">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="no-referrer">
     <title>Hope Counseling</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/ico" href="img/icono.ico">
@@ -93,13 +99,25 @@
           <div class="contact-icon">
             <img src="img/inst.png" alt="Icono de Instagram" class="icon-img">
             <div class="icon-text">
-              <a href="https://www.instagram.com/hopecounselingok/">@hopecounselingok</a>
+              <a href="https://www.instagram.com/hopecounselingok/" class="hopeco">@hopecounselingok</a>
             </div>
           </div>
+
+          <div class="contact-icon">
+            <img src="img/wpp.png" alt="Icono de wpp" class="icon-img">
+            <div class="icon-text">
+              <button onclick="location.href='https://wa.me/5491159389802'" class="wppbtn">Contactame</button>
+            </div>
+          </div>
+          
+
         </div>
       </section>
       
-      
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/flecha.png" alt="subir"></button>
+
+     
+
       <footer>
         <hr>
         <p>Derechos de autor &copy; 2023 Santiago Alegre</p>
