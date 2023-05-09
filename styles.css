@@ -589,3 +589,14 @@ contacto */
     box-shadow: none;
     transform: translateY(1px);
   }
+
+  @media screen and (max-width: 768px) {
+    .contact-icons {
+      flex-wrap: wrap;
+    }
+  
+    .contact-icon {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
